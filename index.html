@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio Page</title>
+
+    <title>Lorenzo Bonomi: profile and projects</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <style>
         body, html {
             margin: 0;
@@ -17,7 +21,6 @@
             align-items: stretch;
             overflow: hidden;
         }
-        
         .container {
             display: flex;
             justify-content: center;
@@ -28,21 +31,21 @@
             overflow-y: auto;
             position: sticky;
         }
-        .column {
+        .rightcolumn {
             background: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             flex-grow: 1;
             overflow-y: auto;
-            flex: 0 0 650px;
+            flex: 0 0 550px;
             min-height: 800px;
   
         }
-        .firstcolumn {
+        .leftcolumn {
             background: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            flex: 0 0 300px;
+            flex: 0 0 250px;
             height: 800px;
             overflow: hidden;
             position: sticky;
@@ -51,22 +54,19 @@
             padding: 40 15px;
             flex-shrink: 0;
         }
-
         .roundedimg {
-            max-width: 200px; /* Set this to the desired maximum width */
+            max-width: 200px;
             height: auto;
-            border-radius: 50%; /* Optional: if you want a circular image */
+            border-radius: 50%; 
             display: block;
-            margin: 0 auto 15px; /* Centers the image and adds space below */
+            margin: 0 auto 15px;
         }
-
         .normalimg {
-            max-width: 90%; /* Set this to the desired maximum width */
+            max-width: 90%;
             height: auto;
             display: block;
-            margin: 0 auto 15px; /* Centers the image and adds space below */
+            margin: 0 auto 15px;
         }
-
         .content {
             padding: 20px;
         }
@@ -76,16 +76,16 @@
             font-weight: 600;
             color: #333;
         }
-
         .description p {
-            margin-bottom: 10px; /* Add space below each paragraph */
-            line-height: 1.4; /* Adjust line spacing for readability */
-            color: #666; /* Set the color for the description text if needed */
+            margin-bottom: 10px;
+            line-height: 1.4; 
+            color: #666;
+            font-size: 14px;
         }
-
         .description strong {
-            color: #333; /* Typically bold text is the same color as the normal text but you can adjust if needed */
-            font-weight: bold; /* This may be redundant depending on your browser's default styling */
+            color: #333; 
+            font-weight: bold; 
+            font-size: 14px;
         }
         .metadata {
             display: flex;
@@ -97,39 +97,35 @@
             display: flex;
             align-items: center;
         }
-        .metadata .member-only {
-            color: #007bff;
+        .metadata .category {
+            color: #2c6aac;
         }
         .metadata i {
             margin-right: 5px;
         }
-
         .github-link {
             margin-top: 20px;
             margin-right: 10px;
-            /*justify-content: center;*/
             display: flex;
         }
-
         .github-link a {
             margin-right: 20px;
             text-decoration: none;
             color: #333;
             font-weight: 600;
+            font-size: 14px;
         }
-
         .github-link a i {
             margin-right: 5px;
         }
-
         .fab.fa-linkedin {
-            color: #0077B5; /* LinkedIn Blue */
+            color: #0077B5; 
+        }
+        .spacer {
+            height: 20px; 
         }
 
-        .spacer {
-            height: 20px; /* This creates a space of 20 pixels */
-        }
-        /* Responsive styles for mobile devices */
+        /* Style for mobile devices */
         @media  (max-width: 950px) {
             body, html {
                 height: 100%;
@@ -137,53 +133,38 @@
                 padding: 10;
                 background-color: #f7fbfc;
                 font-family: 'Open Sans', sans-serif;
-          
-      
             }
             .container {
-                display: block;
-               
+                display: block; 
                 margin: 10px;
-               
-          
             }
-            .column {
+            .rightcolumn {
                 width: 100%;
-                 /* Remove spacing for mobile */
-                /* Adjust height for mobile */
                 margin: 10px 0;
-  
             }
-            .firstcolumn {
+            .leftcolumn {
                 position: static;
                 width: 100%;
-                /* Remove spacing for mobile */
-                /* Adjust height for mobile */
                 max-height: none;
                 margin: 10px 0;
-             
-
-            }
-            .metadata {
-            display: flex;
-     
             }
         }
 
-
     </style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <!-- Right Column for CV -->
-    <div class="firstcolumn">
+    <!-- Column for profile -->
+    <div class="leftcolumn">
+
         <div class="content">
             <h2 class="title">Lorenzo Bonomi</h2>
             <br>
-            <img src="./picture.jpeg" alt="Portfolio Image", class = "roundedimg">
 
+            <img src="./picture.jpeg" alt="Portfolio Image", class = "roundedimg">
             
             <div class="github-link">
                 <a href="https://www.linkedin.com/in/lorenzo-bonomi-7b0b3170/" target="_blank" title="View my GitHub project">
@@ -193,64 +174,63 @@
                     <i class="fab fa-github"></i> Code
                 </a>
             </div>
-
-
-    
-
             <br>
-
             <br>
 
             <div class="metadata">
-                <span class="member-only"></i>Experience</span>
+                <span class="category"></i>Experience</span>
             </div>
 
-                <div class="description">
-                    <p><strong>2022 - Present</strong><br>
-                    Foundation Medicine<br>
-                    Data Analytics and Engineering</p>
-                    <p><strong>2013 - 2022 </strong><br>
-                    Microsoft<br>
-                    Data Science and Analytics</p>
-                    <p><strong>2012 </strong><br>
-                    Vodafone and DHL<br>
-                    Reporting and Analytics</p>
-                    <br>
-                    <!-- Add more descriptions as needed -->
-                </div>
+            <div class="description">
+                <p><strong>2022 - Present</strong><br>
+                Foundation Medicine
+                <br>
+                Data Analytics and Engineering</p>
+                <p><strong>2013 - 2022 </strong>
+                <br>
+                Microsoft
+                <br>
+                Data Science and Analytics</p>
+                <p><strong>2012 </strong>
+                <br>
+                Vodafone and DHL
+                <br>
+                Reporting and Analytics</p>
+                <br>
+            </div>
            
-                
             <div class="metadata">
-                <span class="member-only"></i>Education</span>
+                <span class="category"></i>Education</span>
             </div>
 
             <div class="description">
                 <p><strong>2020 </strong>MS, Georgia Institute of Technology</p>
                 <p><strong>2020 </strong>MA, Bocconi University</p>
                 <br>
-                <!-- Add more descriptions as needed -->
             </div>
        
-
         </div>
     </div>
 
-    <!-- Left Column for Portfolio -->
-    <div class="column">
+    <!-- Projects Columns -->
+    <div class="rightcolumn">
+
         <div class="content">
 
             <div class="metadata">
-                <span class="member-only"></i>Portfolio</span>
+                <span class="category"></i>Projects</span>
             </div>
             <br>
 
             <h2 class="title">CO2 Alert App</h2>
-            <p>An Azure data engineering project: an AirThings device monitors the quality of air and if the CO2 level is higher than 1000 ppm, 
-                an alert is sent to the smart watch with Slack.</p>
+            <div class="description">
+            <p>I recently bought a ViewPlus device by AirThings to monitor the quality of my flat air: the device measures temperature, CO2, VOC, humidity and the data is available in a web dashboard or a smartphone app. If one of the measures is out of expected range, you can take actions like opening the window and let fresh air in. For example, is important to keep CO2 below a certain threshold for focus and health. But monitoring without an explicit alert is very hard: as I spend the day working in front of my pc is very hard to remember to monitor the data and open the window if necessary.</p>
+            </div>
             <br>
-            <img src="./project1.png" alt="Portfolio Image", class = "normalimg">
 
+            <img src="./project1.png" alt="Portfolio Image", class = "normalimg">
             <br>
+
             <div class="github-link">
                 <a href="https://github.com/lorenzobonomi/cotwoalertsapp" target="_blank" title="View my GitHub project">
                     <i class="fab fa-github"></i> View on GitHub
@@ -259,10 +239,10 @@
 
         </div>
 
-
     </div>
 
 </div>
 
 </body>
+
 </html>
