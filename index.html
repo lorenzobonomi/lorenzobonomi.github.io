@@ -53,6 +53,19 @@
             flex-shrink: 0;
         }
 
+        /* Responsive styles for mobile devices */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .column,
+            .firstcolumn {
+                width: 100%;
+                margin-right: 0; /* Remove spacing for mobile */
+                min-height: auto; /* Adjust height for mobile */
+            }
+        }
 
         .roundedimg {
             max-width: 200px; /* Set this to the desired maximum width */
