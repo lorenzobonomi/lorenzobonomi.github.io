@@ -17,6 +17,7 @@
             align-items: stretch;
             overflow: hidden;
         }
+        
         .container {
             display: flex;
             justify-content: center;
@@ -26,8 +27,6 @@
             max-width: 80%;
             overflow-y: auto;
             position: sticky;
-       
-  
         }
         .column {
             background: #fff;
@@ -51,20 +50,6 @@
             top: 0;
             padding: 40 15px;
             flex-shrink: 0;
-        }
-
-        /* Responsive styles for mobile devices */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .column,
-            .firstcolumn {
-                width: 100%;
-                margin-right: 0; /* Remove spacing for mobile */
-                min-height: auto; /* Adjust height for mobile */
-            }
         }
 
         .roundedimg {
@@ -144,12 +129,48 @@
         .spacer {
             height: 20px; /* This creates a space of 20 pixels */
         }
-        /* Responsive layout for smaller screens */
-        @media screen and (max-width: 768px) {
+        /* Responsive styles for mobile devices */
+        @media  (max-width: 950px) {
+            body, html {
+                height: 100%;
+                margin: 10;
+                padding: 10;
+                background-color: #f7fbfc;
+                font-family: 'Open Sans', sans-serif;
+          
+      
+            }
+            .container {
+                display: block;
+               
+                margin: 10px;
+               
+          
+            }
             .column {
-                max-width: 90%;
+                width: 100%;
+                 /* Remove spacing for mobile */
+                /* Adjust height for mobile */
+                margin: 10px 0;
+  
+            }
+            .firstcolumn {
+                position: static;
+                width: 100%;
+                /* Remove spacing for mobile */
+                /* Adjust height for mobile */
+                max-height: none;
+                margin: 10px 0;
+             
+
+            }
+            .metadata {
+            display: flex;
+     
             }
         }
+
+
     </style>
 </head>
 <body>
