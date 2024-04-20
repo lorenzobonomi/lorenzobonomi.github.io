@@ -9,150 +9,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="files/favicon.png">
 
-    <style>
-        body, html {
-            margin: 0;
-            height: 100%;
-            display: flex;
-            background-color: #f7fbfc;
-            font-family: 'Open Sans', sans-serif;
-            justify-content: center;
-            align-items: stretch;
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 30px;
-            padding: 10px 15px;
-            max-width: 80%;
-            overflow-y: auto;
-            position: sticky;
-        }
-        .rightcolumn {
-            background: #f7fbfc;
-
-            border-radius: 8px;
-            flex-grow: 1;
-            overflow-y: auto;
-            flex: 0 0 550px;
-            min-height: 800px;
-  
-        }
-        .leftcolumn {
-            background: #f7fbfc;
-            flex: 0 0 250px;
-            height: 800px;
-            overflow: hidden;
-            position: sticky;
-            max-height: 100vh;
-            top: 0;
-            padding: 40 15px;
-            flex-shrink: 0;
-        }
-        .roundedimg {
-            max-width: 200px;
-            height: auto;
-            border-radius: 50%; 
-            display: block;
-            margin: 0 auto 15px;
-        }
-        .normalimg {
-            max-width: 90%;
-            height: auto;
-            display: block;
-            margin: 0 auto 15px;
-        }
-        .content {
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .title {
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: #333;
-        }
-        .description p {
-            margin-bottom: 10px;
-            line-height: 1.4; 
-            color: #666;
-            font-size: 14px;
-        }
-        .description strong {
-            color: #333; 
-            font-weight: bold; 
-            font-size: 14px;
-        }
-        .metadata {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            color: #666;
-        }
-        .metadata span {
-            display: flex;
-            align-items: center;
-        }
-        .metadata .category {
-            color: #2c6aac;
-        }
-        .metadata i {
-            margin-right: 5px;
-        }
-        .github-link {
-            margin-top: 20px;
-            margin-right: 10px;
-            display: flex;
-        }
-        .github-link a {
-            margin-right: 20px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .github-link a i {
-            margin-right: 5px;
-        }
-        .fab.fa-linkedin {
-            color: #0077B5; 
-        }
-        .spacer {
-            height: 20px; 
-        }
-
-        /* Style for mobile devices */
-        @media  (max-width: 950px) {
-            body, html {
-                height: 100%;
-                margin: 10;
-                padding: 10;
-                background-color: #f7fbfc;
-                font-family: 'Open Sans', sans-serif;
-            }
-            .container {
-                display: block; 
-                margin: 10px;
-            }
-            .rightcolumn {
-                width: 100%;
-                margin: 10px 0;
-            }
-            .leftcolumn {
-                position: static;
-                width: 100%;
-                max-height: none;
-                margin: 10px 0;
-            }
-        }
-
-    </style>
 </head>
 
 <body>
@@ -166,7 +25,7 @@
             <h2 class="title">Lorenzo Bonomi</h2>
             <br>
 
-            <img src="./picture.jpeg" alt="Portfolio Image", class = "roundedimg">
+            <img src="files/picture.jpeg" alt="Portfolio Image", class = "roundedimg">
             
             <div class="github-link">
                 <a href="https://www.linkedin.com/in/lorenzo-bonomi-7b0b3170/" target="_blank" title="View my GitHub project">
@@ -229,7 +88,7 @@
             <p>I recently bought a ViewPlus device by AirThings to monitor the quality of my flat air: the device measures temperature, CO2, VOC, humidity and the data is available in a web dashboard or a smartphone app. If one of the measures is out of expected range, you can take actions like opening the window and let fresh air in. For example, is important to keep CO2 below a certain threshold for focus and health. But monitoring without an explicit alert is very hard: as I spend the day working in front of my pc is very hard to remember to monitor the data and open the window if necessary.</p>
             </div>
             <br>
-            <img src="./project1.png" alt="Portfolio Image", class = "normalimg">
+            <img src="files/project1.png" alt="Portfolio Image", class = "normalimg">
             <br>
 
             <div class="github-link">
@@ -255,7 +114,7 @@
             </div>
             <br>
             <video width="90%" height="90%" controls muted playsinline>
-                <source src="./output.mp4" type="video/mp4">
+                <source src="files/output.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <br>
@@ -281,7 +140,7 @@
             <p>A multi Large Language Model Streamlit App.</p>
             </div>
             <br>
-            <img src="./project3.png" alt="Portfolio Image", class = "normalimg">
+            <img src="files/project3.png" alt="Portfolio Image", class = "normalimg">
             <br>
             <div class="github-link">
                 <a href="https://github.com/lorenzobonomi/montasai" target="_blank" title="View my GitHub project">

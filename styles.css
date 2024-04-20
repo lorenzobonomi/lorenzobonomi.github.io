@@ -1,0 +1,148 @@
+/* Style for the web page */
+
+/* General */
+::-webkit-scrollbar { /* remove scroll bar */
+    display: none;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    background-color: #f7fbfc;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px 15px;
+    max-width: 80%;
+    overflow-y: auto;
+    position: sticky;
+    -ms-overflow-style: none; /* removes scrollbar IE and Edge */
+    scrollbar-width: none; /* removes scrollbar Firefox */
+}
+.rightcolumn {
+    background: #f7fbfc;
+
+    border-radius: 8px;
+    flex-grow: 1;
+    overflow-y: auto;
+    flex: 0 0 550px;
+    min-height: 800px;
+
+}
+.leftcolumn {
+    background: #f7fbfc;
+    flex: 0 0 250px;
+    height: 800px;
+    overflow: hidden;
+    position: sticky;
+    max-height: 100vh;
+    top: 0;
+    padding: 40 15px;
+    flex-shrink: 0;
+}
+.roundedimg {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto 15px;
+}
+.normalimg {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+.content {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+.description p {
+    margin-bottom: 10px;
+    line-height: 1.4; 
+    color: #666;
+    font-size: 14px;
+}
+.description strong {
+    color: #333; 
+    font-weight: bold; 
+    font-size: 14px;
+}
+.metadata {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}
+.metadata span {
+    display: flex;
+    align-items: center;
+}
+.metadata .category {
+    color: #2c6aac;
+}
+.metadata i {
+    margin-right: 5px;
+}
+.github-link {
+    margin-top: 20px;
+    margin-right: 10px;
+    display: flex;
+}
+.github-link a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+.github-link a i {
+    margin-right: 5px;
+}
+.fab.fa-linkedin {
+    color: #0077B5; 
+}
+.spacer {
+    height: 20px; 
+}
+
+/* Style for mobile devices */
+@media  (max-width: 950px) {
+    body, html {
+        height: 100%;
+        margin: 10;
+        padding: 10;
+        background-color: #f7fbfc;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .container {
+        display: block; 
+        margin: 10px;
+    }
+    .rightcolumn {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .leftcolumn {
+        position: static;
+        width: 100%;
+        max-height: none;
+        margin: 10px 0;
+    }
+}
