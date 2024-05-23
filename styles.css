@@ -122,6 +122,40 @@ body, html {
     height: 20px; 
 }
 
+/* slideshow */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+.slides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: rgb(87, 81, 81);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(224, 221, 221, 0.5); /* Semi-transparent background */
+    border: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(145, 144, 144, 0.8); /* Darker on hover */
+}
+
 /* Style for mobile devices */
 @media  (max-width: 950px) {
     body, html {
